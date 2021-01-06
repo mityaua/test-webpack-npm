@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
+    <title>test-webpack-npm</title>
   </head>
 
   <body>
-    <ul id="page-nav">
+    <!-- <ul id="page-nav">
       <li><a href="#team">Team</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#profile">Profile</a></li>
-    </ul>
+    </ul> -->
 
     <button type="button" data-modal-open>Открыть модалку</button>
 
@@ -46,14 +46,24 @@
     </div>
     <button class="js-prev" data-tippy-content="Prev slide">prev</button>
     <button class="js-next" data-tippy-content="Next slide">next</button>
+    <br /><br />
+    <select id="single">
+      <option value="value 1">Value 1</option>
+      <option value="value 2">Value 2</option>
+      <option value="value 3">Value 3</option>
+    </select>
 
-<select id="single">
-  <option value="value 1">Value 1</option>
-  <option value="value 2">Value 2</option>
-  <option value="value 3">Value 3</option>
-</select>
+    <canvas id="myChart" width="400" height="200"></canvas>
 
-<canvas id="myChart" width="400" height="100"></canvas>
+    <video id="player" playsinline controls>
+      <source
+        src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4"
+        type="video/mp4"
+      />
+      <source src="/path/to/video.webm" type="video/webm" />
 
+      <!-- Captions are optional -->
+      <track kind="captions" label="English captions" srclang="en" default />
+    </video>
   </body>
 </html>

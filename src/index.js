@@ -5,6 +5,7 @@ import './js/notification';
 import './js/tippy';
 import './js/slimselect';
 import './js/chart';
+import './js/plyr';
 // import Gumshoe from 'gumshoejs';
 
 // const gum = new Gumshoe('#page-nav a');
