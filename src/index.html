@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Starter Kit</title>
+  </head>
+
+  <body>
+    <ul id="page-nav">
+      <li><a href="#team">Team</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#profile">Profile</a></li>
+    </ul>
+
+    <button type="button" data-modal-open>Открыть модалку</button>
+
+    <template id="modal">
+      <div class="modal">
+        <p>I'm a modal created from a DOM element/node.</p>
+        <button type="button" data-modal-close>Закрыть</button>
+      </div>
+    </template>
+    <br /><br />
+    <div class="siema">
+      <div>
+        <img
+          src="https://images.pexels.com/photos/178932/pexels-photo-178932.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/1050597/pexels-photo-1050597.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt=""
+        />
+      </div>
+    </div>
+    <button class="js-prev" data-tippy-content="Prev slide">prev</button>
+    <button class="js-next" data-tippy-content="Next slide">next</button>
+
+<select id="single">
+  <option value="value 1">Value 1</option>
+  <option value="value 2">Value 2</option>
+  <option value="value 3">Value 3</option>
+</select>
+
+<canvas id="myChart" width="400" height="100"></canvas>
+
+  </body>
+</html>
