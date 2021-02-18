@@ -8,6 +8,14 @@ import './js/chart';
 import './js/plyr';
 import './js/local';
 import './js/template';
-// import Gumshoe from 'gumshoejs';
 
-// const gum = new Gumshoe('#page-nav a');
+import { AvatarGenerator } from 'random-avatar-generator';
+const generator = new AvatarGenerator();
+
+const form = document.querySelector('#js-form');
+
+form.addEventListener('submit', event => {
+  const avatar = generator.generateRandomAvatar('');
+
+  form.insertAdjacentHTML('afterend', `<img src="${avatar}" alt="">`);
+});
