@@ -55,6 +55,7 @@
     "core-js": "^3.6.5",
     "gumshoejs": "^5.1.2",
     "handlebars": "^4.7.6",
+    "micromodal": "^0.4.6",
     "plyr": "^3.6.3",
     "random-avatar-generator": "^2.0.0",
     "siema": "^1.5.1",

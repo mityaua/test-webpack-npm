@@ -19,3 +19,36 @@ form.addEventListener('submit', event => {
 
   form.insertAdjacentHTML('afterend', `<img src="${avatar}" alt="">`);
 });
+
+const randomRef = document.querySelector('#random-form');
+const areaRef = document.querySelector('#random-area');
+
+randomRef.addEventListener('submit', event => {
+  event.preventDefault();
+
+  if (!event.currentTarget.elements.random.value) {
+    return;
+  }
+
+  const arr = [];
+
+  arr.push(areaRef.value.replace(/\r\n/g, '\n').split('\n'));
+
+  console.log();
+
+  checkWinner(arr);
+});
+
+function checkWinner(array) {
+  const winner = array[Math.floor(Math.random() * array.length)];
+
+  return console.log(winner);
+}
+
+import * as basicLightbox from 'basiclightbox';
+
+const instance = basicLightbox.create(`
+    <iframe width="727" height="409" src="https://www.youtube.com/embed/rWfZAeEnn2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`);
+
+instance.show();

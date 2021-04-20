@@ -8,6 +8,11 @@
   </head>
 
   <body>
+    <form id="random-form">
+      <textarea id="random-area" name="random" rows="4" cols="50"></textarea>
+      <button type="submit" data-micromodal-trigger="modal-1">Отправить</button>
+    </form>
+    <br /><br />
     <button type="button" data-modal-open>Открыть модалку</button>
 
     <template id="modal">
@@ -16,7 +21,7 @@
         <button type="button" data-modal-close>Закрыть</button>
       </div>
     </template>
-    
+
     <br /><br />
     <div class="siema">
       <div>
@@ -68,7 +73,7 @@
       </label>
     </form>
 
-    <ul id="fruit-list">
-    </ul>
+    <ul id="fruit-list"></ul>
+    
   </body>
 </html>
